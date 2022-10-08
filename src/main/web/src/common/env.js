@@ -17,7 +17,7 @@ function env() {
         return {
             server: '',
             wsServer: wsPrefix + window.location.host,
-            prefix: window.location.protocol + '//' + window.location.host,
+            prefix: window.location.protocol + '//' + window.location.host + window.location.pathname,
         }
     }
 }
